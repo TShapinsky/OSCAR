@@ -46,9 +46,555 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 7700 2500 1000 300 
+S 10150 950  550  200 
 U 595B226C
 F0 "Pre Amp 1" 60
 F1 "Pre Amp.sch" 60
+F2 "Vo" O L 10150 1050 60 
+F3 "Vref" I R 10700 1050 60 
 $EndSheet
+$Comp
+L PCM4204 U?
+U 1 1 595B8417
+P 7700 2050
+F 0 "U?" H 7700 2050 60  0000 C CNN
+F 1 "PCM4204" H 7700 2150 60  0000 C CNN
+F 2 "" H 7700 2050 60  0001 C CNN
+F 3 "" H 7700 2050 60  0001 C CNN
+	1    7700 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 595B8693
+P 7000 800
+F 0 "#PWR?" H 7000 550 50  0001 C CNN
+F 1 "Earth" H 7000 650 50  0001 C CNN
+F 2 "" H 7000 800 50  0001 C CNN
+F 3 "" H 7000 800 50  0001 C CNN
+	1    7000 800 
+	-1   0    0    1   
+$EndComp
+Text GLabel 7950 850  1    60   Output ~ 0
+VCC1
+Text GLabel 8050 850  1    60   Output ~ 0
+VCC2
+Text GLabel 8150 850  1    60   Output ~ 0
+VDD1
+Text GLabel 8250 850  1    60   Output ~ 0
+VDD2
+Text GLabel 8350 850  1    60   Output ~ 0
+VDD3
+Wire Wire Line
+	7850 850  7850 900 
+Wire Wire Line
+	7000 850  7850 850 
+Wire Wire Line
+	7050 850  7050 900 
+Wire Wire Line
+	7150 900  7150 850 
+Connection ~ 7150 850 
+Wire Wire Line
+	7250 900  7250 850 
+Connection ~ 7250 850 
+Wire Wire Line
+	7350 900  7350 850 
+Connection ~ 7350 850 
+Wire Wire Line
+	7450 900  7450 850 
+Connection ~ 7450 850 
+Wire Wire Line
+	7550 900  7550 850 
+Connection ~ 7550 850 
+Wire Wire Line
+	7650 900  7650 850 
+Connection ~ 7650 850 
+Wire Wire Line
+	7750 900  7750 850 
+Connection ~ 7750 850 
+Wire Wire Line
+	7000 850  7000 800 
+Connection ~ 7050 850 
+Wire Wire Line
+	7950 850  7950 900 
+Wire Wire Line
+	8050 850  8050 900 
+Wire Wire Line
+	8150 850  8150 900 
+Wire Wire Line
+	8250 850  8250 900 
+Wire Wire Line
+	8350 850  8350 900 
+Text GLabel 10700 3500 2    60   Input ~ 0
+VCC1
+Text GLabel 10700 4000 2    60   Input ~ 0
+VCC2
+Text GLabel 10700 4700 2    60   Input ~ 0
+VDD1
+Text GLabel 10700 5200 2    60   Input ~ 0
+VDD2
+Text GLabel 10700 5700 2    60   Input ~ 0
+VDD3
+$Comp
+L +5V #PWR?
+U 1 1 595B9388
+P 10150 3350
+F 0 "#PWR?" H 10150 3200 50  0001 C CNN
+F 1 "+5V" H 10150 3490 50  0000 C CNN
+F 2 "" H 10150 3350 50  0001 C CNN
+F 3 "" H 10150 3350 50  0001 C CNN
+	1    10150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 3350 10150 4000
+Wire Wire Line
+	10150 3500 10700 3500
+Connection ~ 10150 3500
+$Comp
+L C C?
+U 1 1 595B941C
+P 10550 3350
+F 0 "C?" H 10575 3450 50  0000 L CNN
+F 1 "0.1u" H 10575 3250 50  0000 L CNN
+F 2 "" H 10588 3200 50  0001 C CNN
+F 3 "" H 10550 3350 50  0001 C CNN
+	1    10550 3350
+	0    -1   1    0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 595B946F
+P 10550 3650
+F 0 "C?" H 10575 3750 50  0000 L CNN
+F 1 "33u" H 10575 3550 50  0000 L CNN
+F 2 "" H 10588 3500 50  0001 C CNN
+F 3 "" H 10550 3650 50  0001 C CNN
+	1    10550 3650
+	0    -1   1    0   
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 595B9522
+P 11050 3250
+F 0 "#PWR?" H 11050 3000 50  0001 C CNN
+F 1 "Earth" H 11050 3100 50  0001 C CNN
+F 2 "" H 11050 3250 50  0001 C CNN
+F 3 "" H 11050 3250 50  0001 C CNN
+	1    11050 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10350 3650 10400 3650
+Wire Wire Line
+	10350 3350 10350 3650
+Connection ~ 10350 3500
+Wire Wire Line
+	10400 3350 10350 3350
+Wire Wire Line
+	11050 3250 11050 4150
+Wire Wire Line
+	11050 3350 10700 3350
+Wire Wire Line
+	11050 3650 10700 3650
+Connection ~ 11050 3350
+Wire Wire Line
+	10150 4000 10700 4000
+$Comp
+L C C?
+U 1 1 595B967E
+P 10550 3850
+F 0 "C?" H 10575 3950 50  0000 L CNN
+F 1 "0.1u" H 10575 3750 50  0000 L CNN
+F 2 "" H 10588 3700 50  0001 C CNN
+F 3 "" H 10550 3850 50  0001 C CNN
+	1    10550 3850
+	0    -1   1    0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 595B9684
+P 10550 4150
+F 0 "C?" H 10575 4250 50  0000 L CNN
+F 1 "33u" H 10575 4050 50  0000 L CNN
+F 2 "" H 10588 4000 50  0001 C CNN
+F 3 "" H 10550 4150 50  0001 C CNN
+	1    10550 4150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10350 4150 10400 4150
+Wire Wire Line
+	10350 3850 10350 4150
+Connection ~ 10350 4000
+Wire Wire Line
+	10400 3850 10350 3850
+Wire Wire Line
+	11050 4150 10700 4150
+Connection ~ 11050 3650
+Wire Wire Line
+	10150 4550 10150 5700
+Wire Wire Line
+	10150 4700 10700 4700
+Connection ~ 10150 4700
+$Comp
+L C C?
+U 1 1 595B9A38
+P 10550 4550
+F 0 "C?" H 10575 4650 50  0000 L CNN
+F 1 "0.1u" H 10575 4450 50  0000 L CNN
+F 2 "" H 10588 4400 50  0001 C CNN
+F 3 "" H 10550 4550 50  0001 C CNN
+	1    10550 4550
+	0    -1   1    0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 595B9A3E
+P 10550 4850
+F 0 "C?" H 10575 4950 50  0000 L CNN
+F 1 "33u" H 10575 4750 50  0000 L CNN
+F 2 "" H 10588 4700 50  0001 C CNN
+F 3 "" H 10550 4850 50  0001 C CNN
+	1    10550 4850
+	0    -1   1    0   
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 595B9A44
+P 11050 4450
+F 0 "#PWR?" H 11050 4200 50  0001 C CNN
+F 1 "Earth" H 11050 4300 50  0001 C CNN
+F 2 "" H 11050 4450 50  0001 C CNN
+F 3 "" H 11050 4450 50  0001 C CNN
+	1    11050 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10350 4850 10400 4850
+Wire Wire Line
+	10350 4550 10350 4850
+Connection ~ 10350 4700
+Wire Wire Line
+	10400 4550 10350 4550
+Wire Wire Line
+	11050 4450 11050 5850
+Wire Wire Line
+	11050 4550 10700 4550
+Wire Wire Line
+	11050 4850 10700 4850
+Connection ~ 11050 4550
+Wire Wire Line
+	10150 5200 10700 5200
+$Comp
+L C C?
+U 1 1 595B9A53
+P 10550 5050
+F 0 "C?" H 10575 5150 50  0000 L CNN
+F 1 "0.1u" H 10575 4950 50  0000 L CNN
+F 2 "" H 10588 4900 50  0001 C CNN
+F 3 "" H 10550 5050 50  0001 C CNN
+	1    10550 5050
+	0    -1   1    0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 595B9A59
+P 10550 5350
+F 0 "C?" H 10575 5450 50  0000 L CNN
+F 1 "33u" H 10575 5250 50  0000 L CNN
+F 2 "" H 10588 5200 50  0001 C CNN
+F 3 "" H 10550 5350 50  0001 C CNN
+	1    10550 5350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10350 5350 10400 5350
+Wire Wire Line
+	10350 5050 10350 5350
+Connection ~ 10350 5200
+Wire Wire Line
+	10400 5050 10350 5050
+Wire Wire Line
+	11050 5350 10700 5350
+Connection ~ 11050 4850
+Wire Wire Line
+	10150 5700 10700 5700
+$Comp
+L C C?
+U 1 1 595B9B91
+P 10550 5550
+F 0 "C?" H 10575 5650 50  0000 L CNN
+F 1 "0.1u" H 10575 5450 50  0000 L CNN
+F 2 "" H 10588 5400 50  0001 C CNN
+F 3 "" H 10550 5550 50  0001 C CNN
+	1    10550 5550
+	0    -1   1    0   
+$EndComp
+$Comp
+L CP C?
+U 1 1 595B9B97
+P 10550 5850
+F 0 "C?" H 10575 5950 50  0000 L CNN
+F 1 "33u" H 10575 5750 50  0000 L CNN
+F 2 "" H 10588 5700 50  0001 C CNN
+F 3 "" H 10550 5850 50  0001 C CNN
+	1    10550 5850
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10350 5850 10400 5850
+Wire Wire Line
+	10350 5550 10350 5850
+Connection ~ 10350 5700
+Wire Wire Line
+	10400 5550 10350 5550
+Wire Wire Line
+	11050 5850 10700 5850
+Connection ~ 10150 5200
+Connection ~ 11050 5350
+Wire Wire Line
+	10700 5550 11050 5550
+Connection ~ 11050 5550
+Wire Wire Line
+	10700 5050 11050 5050
+Connection ~ 11050 5050
+Wire Wire Line
+	10700 3850 11050 3850
+Connection ~ 11050 3850
+$Comp
+L +3.3V #PWR?
+U 1 1 595B9EEC
+P 10150 4550
+F 0 "#PWR?" H 10150 4400 50  0001 C CNN
+F 1 "+3.3V" H 10150 4690 50  0000 C CNN
+F 2 "" H 10150 4550 50  0001 C CNN
+F 3 "" H 10150 4550 50  0001 C CNN
+	1    10150 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 595BAFCC
+P 9000 1750
+F 0 "C?" H 9010 1820 50  0000 L CNN
+F 1 "0.1u" H 9010 1670 50  0000 L CNN
+F 2 "" H 9000 1750 50  0001 C CNN
+F 3 "" H 9000 1750 50  0001 C CNN
+	1    9000 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L CP_Small C?
+U 1 1 595BB093
+P 9200 1850
+F 0 "C?" H 9210 1920 50  0000 L CNN
+F 1 "33u" H 9210 1770 50  0000 L CNN
+F 2 "" H 9200 1850 50  0001 C CNN
+F 3 "" H 9200 1850 50  0001 C CNN
+	1    9200 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 1750 8800 1750
+Wire Wire Line
+	8800 1750 8800 1650
+Wire Wire Line
+	8750 1650 9350 1650
+Wire Wire Line
+	8750 1850 9100 1850
+Wire Wire Line
+	8900 1750 8850 1750
+Wire Wire Line
+	8850 1750 8850 1850
+Connection ~ 8850 1850
+$Comp
+L Earth #PWR?
+U 1 1 595BB36D
+P 9650 1850
+F 0 "#PWR?" H 9650 1600 50  0001 C CNN
+F 1 "Earth" H 9650 1700 50  0001 C CNN
+F 2 "" H 9650 1850 50  0001 C CNN
+F 3 "" H 9650 1850 50  0001 C CNN
+	1    9650 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 595BB44A
+P 9600 1700
+F 0 "C?" H 9610 1770 50  0000 L CNN
+F 1 "0.1u" H 9610 1620 50  0000 L CNN
+F 2 "" H 9600 1700 50  0001 C CNN
+F 3 "" H 9600 1700 50  0001 C CNN
+	1    9600 1700
+	-1   0    0    1   
+$EndComp
+Connection ~ 8800 1650
+Wire Wire Line
+	8750 1550 9700 1550
+Wire Wire Line
+	9100 1750 9350 1750
+Wire Wire Line
+	9600 1550 9600 1600
+Wire Wire Line
+	9350 1650 9350 1850
+Wire Wire Line
+	9300 1850 9650 1850
+Connection ~ 9350 1750
+Connection ~ 9350 1850
+Wire Wire Line
+	9600 1800 9600 1850
+Connection ~ 9600 1850
+$Comp
+L C_Small C?
+U 1 1 595BBE85
+P 9000 2150
+F 0 "C?" H 9010 2220 50  0000 L CNN
+F 1 "0.1u" H 9010 2070 50  0000 L CNN
+F 2 "" H 9000 2150 50  0001 C CNN
+F 3 "" H 9000 2150 50  0001 C CNN
+	1    9000 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L CP_Small C?
+U 1 1 595BBE8B
+P 9200 2250
+F 0 "C?" H 9210 2320 50  0000 L CNN
+F 1 "33u" H 9210 2170 50  0000 L CNN
+F 2 "" H 9200 2250 50  0001 C CNN
+F 3 "" H 9200 2250 50  0001 C CNN
+	1    9200 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 2150 8800 2150
+Wire Wire Line
+	8800 2150 8800 2050
+Wire Wire Line
+	8750 2050 9350 2050
+Wire Wire Line
+	8750 2250 9100 2250
+Wire Wire Line
+	8900 2150 8850 2150
+Wire Wire Line
+	8850 2150 8850 2250
+Connection ~ 8850 2250
+$Comp
+L Earth #PWR?
+U 1 1 595BBE98
+P 9650 2250
+F 0 "#PWR?" H 9650 2000 50  0001 C CNN
+F 1 "Earth" H 9650 2100 50  0001 C CNN
+F 2 "" H 9650 2250 50  0001 C CNN
+F 3 "" H 9650 2250 50  0001 C CNN
+	1    9650 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 595BBE9E
+P 9600 2100
+F 0 "C?" H 9610 2170 50  0000 L CNN
+F 1 "0.1u" H 9610 2020 50  0000 L CNN
+F 2 "" H 9600 2100 50  0001 C CNN
+F 3 "" H 9600 2100 50  0001 C CNN
+	1    9600 2100
+	-1   0    0    1   
+$EndComp
+Connection ~ 8800 2050
+Wire Wire Line
+	8750 1950 9700 1950
+Wire Wire Line
+	9100 2150 9350 2150
+Wire Wire Line
+	9600 1950 9600 2000
+Wire Wire Line
+	9350 2050 9350 2250
+Wire Wire Line
+	9300 2250 9650 2250
+Connection ~ 9350 2150
+Connection ~ 9350 2250
+Wire Wire Line
+	9600 2200 9600 2250
+Connection ~ 9600 2250
+Text GLabel 9700 1550 2    60   Input ~ 0
+VREF12
+Text GLabel 9700 1950 2    60   Input ~ 0
+VREF34
+Connection ~ 9600 1550
+Connection ~ 9600 1950
+Text GLabel 10750 1050 2    60   Output ~ 0
+VREF12
+Text GLabel 8800 1150 2    60   Output ~ 0
+VREF12
+Text GLabel 8800 1350 2    60   Output ~ 0
+VREF12
+Text GLabel 8800 2350 2    60   Output ~ 0
+VREF34
+Text GLabel 8800 2550 2    60   Output ~ 0
+VREF34
+Wire Wire Line
+	8750 1350 8800 1350
+Wire Wire Line
+	8750 1150 8800 1150
+Wire Wire Line
+	8750 2350 8800 2350
+Wire Wire Line
+	8750 2550 8800 2550
+Wire Wire Line
+	10700 1050 10750 1050
+$Sheet
+S 10150 1350 550  200 
+U 595BE132
+F0 "Pre Amp 2" 60
+F1 "Pre Amp.sch" 60
+F2 "Vo" O L 10150 1450 60 
+F3 "Vref" I R 10700 1450 60 
+$EndSheet
+Text GLabel 10750 1450 2    60   Output ~ 0
+VREF12
+Wire Wire Line
+	10700 1450 10750 1450
+Wire Wire Line
+	10150 1050 10100 1050
+Wire Wire Line
+	10100 1050 10100 1250
+Wire Wire Line
+	10100 1250 8750 1250
+Wire Wire Line
+	10150 1450 8750 1450
+$Sheet
+S 9850 2150 550  200 
+U 595BEAC4
+F0 "Pre Amp 3" 60
+F1 "Pre Amp.sch" 60
+F2 "Vo" O L 9850 2250 60 
+F3 "Vref" I R 10400 2250 60 
+$EndSheet
+Wire Wire Line
+	10400 2250 10450 2250
+$Sheet
+S 9850 2550 550  200 
+U 595BEACA
+F0 "Pre Amp 4" 60
+F1 "Pre Amp.sch" 60
+F2 "Vo" O L 9850 2650 60 
+F3 "Vref" I R 10400 2650 60 
+$EndSheet
+Wire Wire Line
+	10400 2650 10450 2650
+Wire Wire Line
+	9850 2250 9800 2250
+Wire Wire Line
+	9800 2250 9800 2450
+Text GLabel 10450 2250 2    60   Output ~ 0
+VREF34
+Text GLabel 10450 2650 2    60   Output ~ 0
+VREF34
+Wire Wire Line
+	9800 2450 8750 2450
+Wire Wire Line
+	8750 2650 9850 2650
 $EndSCHEMATC
