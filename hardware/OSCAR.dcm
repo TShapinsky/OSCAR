@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP INA217
+D Low-Noise, Low-Distortion Instrumentation Amplifier G = 1 + 10kOhm/Rg
+K Instrumentation OpAmp
+F http://www.ti.com/lit/ds/symlink/ina217.pdf
+$ENDCMP
+#
+#End Doc Library
