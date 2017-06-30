@@ -1,4 +1,4 @@
-update=Fri 30 Jun 2017 12:27:34 PM PDT
+update=Fri 30 Jun 2017 03:33:04 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=diode
 LibName31=OSCAR
 LibName32=switches
 LibName33=stm32
+LibName34=dc-dc
