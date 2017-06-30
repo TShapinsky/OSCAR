@@ -1566,4 +1566,6 @@ Connection ~ 4300 10150
 Connection ~ 4300 10450
 Wire Wire Line
 	4100 10450 4350 10450
+Text Notes 3750 9450 2    60   ~ 0
++- 18V Regulator
 $EndSCHEMATC
