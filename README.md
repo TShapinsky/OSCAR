@@ -1,2 +1,2 @@
 # OSCAR
-Open Source Audio Interface
+Open SourCe Audio inteRface
